@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:background="#A2B9CF">
+
+        <TextView
+            android:id="@+id/project_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="项目"
+            android:textColor="#DDDDDD"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/project_add"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/message_function_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+
+    </RelativeLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/project_slide"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#E4EEF9"
+        app:tl_indicator_color="#2296E1"
+        app:tl_tab_padding="0dp"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="#2296E1"
+        app:tl_textUnselectColor="#879DB2"
+        app:tl_textsize="15sp"
+        app:tl_underline_color="#2296E1" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/project_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

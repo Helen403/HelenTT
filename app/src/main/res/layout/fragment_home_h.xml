@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/home_rl_h_1"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#5583CD"
+        android:orientation="vertical">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/home_bg_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+        <TextView
+            android:id="@+id/home_h_cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+
+            android:text="2017年5月11日"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/home_h_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/home_h_cal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="星期四"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/home_h_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="中山"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/home_tem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/home_h_add"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="20度"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:id="@+id/home_h_sun"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/home_h_add"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/home_tem"
+            android:padding="4dp"
+            android:src="@drawable/w_shine_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_rl_h_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/home_rl_h_1"
+        android:background="#48485E">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/home_ll_1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/home_history_h_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="历史上的今天"
+                    android:textColor="#FDF9FA"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:id="@+id/home_history_h_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="10月1日国庆大事件"
+                    android:textColor="#909092"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/home_history_h_remind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="温馨提示"
+                    android:textColor="#FDF9FA"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/home_history_h_remind_r"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="有2条信息未读"
+                    android:textColor="#909092"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/home_h_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/home_rl_h_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/quila" />
+
+
+</RelativeLayout>
+
+

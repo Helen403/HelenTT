@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#383A4C"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/find_rl_3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_bg_com">
+
+        <ImageView
+            android:id="@+id/find_seach_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="7dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/find_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/find_seach_icon"
+            android:hint="根据手机号/时间号查找"
+            android:textColorHint="#B5B5B5"
+            android:background="@null"
+            android:textColor="#B5B5B5"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/find_seach"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="7dp"
+            android:src="@mipmap/ic_launcher" />
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/find_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1D1F1E"
+    android:orientation="vertical">
+
+
+<RelativeLayout
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#292929"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/home_main_item_icon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/quila" />
+
+    <TextView
+        android:id="@+id/home_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home_main_item_icon"
+        android:layout_toRightOf="@+id/home_main_item_icon"
+        android:text="22:00"
+        android:textColor="#04B577"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/home_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_item_time"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/home_main_item_icon"
+        android:text="国际会议"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/home_item_surplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_item_title"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/home_main_item_icon"
+        android:text="还有1时15分钟"
+        android:textColor="#9A9A9A"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>
+</RelativeLayout>

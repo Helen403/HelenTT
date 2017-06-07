@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="480dp"
+    android:background="@drawable/large_pic_shift_new">
+
+
+    <ImageView
+        android:id="@+id/ask_icon"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/ask_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ask_icon"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="同意"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+
+    <TextView
+        android:id="@+id/ask_disagree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ask_icon"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="不同意"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+
+</RelativeLayout>
