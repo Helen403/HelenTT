@@ -1,0 +1,13 @@
+    Helen.Class1 p3 = new Helen.Class1();
+            //2是决定返回的多少个结果
+            MWArray[] argsIn = new MWArray[1];
+            MWArray aa= (MWNumericArray)new double[4, 4] { { 0,1,1,1 }, { 1,0,1,1 }, { 1, 1, 0, 1 }, { 1, 1, 1, 0 } };
+
+
+            MWArray[] argsOut1 = new MWArray[4];
+               // public MWArray[] Helen(int numArgsOut, MWArray A);
+          MWArray[] argsOut =  p3.Helen(2, aa);
+            Console.WriteLine("#######################");
+            Console.WriteLine(argsOut[0].ToString());
+            Console.WriteLine(argsOut[1].ToString());
+            Console.WriteLine("#######################");
